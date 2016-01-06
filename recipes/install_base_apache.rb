@@ -115,6 +115,8 @@ else
   case node[:platform_family]
   when 'rhel', 'fedora', 'suse'
     package 'mod_security'
+  when 'ubuntu'
+    package 'libapach2-mod-security2'
   when 'debian'
     package 'libapache-mod-security'
   when 'arch'
